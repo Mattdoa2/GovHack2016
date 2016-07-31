@@ -3,17 +3,59 @@
 <head>
     <title>Good Old Life</title>
 	<meta charset="utf-8" />
+
+    <script src="scripts/jquery-3.1.0.js"></script>
+    <script src="scripts/global.js"></script>
+    
 </head>
 <body>
     <div id="pageholder">
-        <div id="header">If I Were An ANZAC </div>
+        <div id="header">The Good Old Life</div>
             <div id="Body">
-                <form>
-                    <label>Find by Suburb</label><input id="suburbInput" />
-
+                <form onsubmit="return false;">
+                    <input id="suburbInput" list="lgaDatalist" autocomplete="off" />
+                    <datalist id="lgaDatalist">
+                        <option value="MAROOCHYDORE">
+                        <option value="NOOSAVILLE">
+                        <option value="CHINCHILLA">
+                        <option value="MACKAY">
+                        <option value="CALOUNDRA">
+                     </datalist>
+                    
+                    <button onclick="findSeniorInformation();">Get Information</button>
                 </form>
+                <button onclick="loadLgas();" hidden="hidden">outside form</button>
+                <button onclick="getData();" hidden="hidden">Get Data Test Function</button>
+                <button onclick="getReportInfo();" hidden="hidden">Get report info</button>
+                <button onclick="getSeniorsDiscounts('NOOSAVILLE');" hidden="hidden">Get discount info</button>                
             </div>
-        <div id="footer">Brought to you by Kathew &amp; Cashews - GovHack 2015</div>
+            <br /><br /><br /><br />
+            <table id="eventsTable">
+                <tr><td><h3>Seniors Events</h3></td></tr>
+            </table>
+            <br />
+            <table id="discountsTable">
+                <tr><td><h3>Seniors Discounts</h3></td></tr>
+            </table>
+            <br />
+            <table id="activitiesTable">
+                <tr><td><h3>Seniors Activities</h3></td></tr>
+            </table>
+            <br />
+            <table id="cultureTable">
+                <tr><td><h3>Culture and Heritage</h3></td></tr>
+            </table>
+            <br />
+            <table id="communityTable">
+                <tr><td><h3>Community Groups</h3></td></tr>
+            </table>
+            <br />
+            <table id="educationTable">
+                <tr><td><h3>Adult Education</h3></td></tr>
+            </table>
+
+        <br /><br />
+        <div id="footer">Brought to you by Jam Berries - GovHack 2016</div>
     </div>
 </body>
 </html>

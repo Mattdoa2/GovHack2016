@@ -17,9 +17,29 @@ namespace GooldOldServices
         string GetData(int value);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        string GetReportInfo(string suburb);
 
         // TODO: Add your service operations here
+        [OperationContract]
+        string GetSuburbs();
+
+        [OperationContract]
+        string GetEducation(string suburb);
+
+        [OperationContract]
+        string GetCulture(string suburb);
+
+        [OperationContract]
+        string GetActivities(string suburb);
+
+        [OperationContract]
+        string GetCommunityCentres(string suburb);
+
+        [OperationContract]
+        string GetEvents(string suburb);
+
+        [OperationContract]
+        string GetSeniorsDiscounts(string suburb);
     }
 
 

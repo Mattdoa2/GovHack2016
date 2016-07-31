@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodOldLife", "GoodOldLife\GoodOldLife.csproj", "{F7E06872-6B19-461D-817C-73F031936495}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooldOldServices", "GooldOldServices\GooldOldServices.csproj", "{F69A2FA5-8373-43F1-B20A-B4A4DECA3CC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodOldServices", "GooldOldServices\GoodOldServices.csproj", "{F69A2FA5-8373-43F1-B20A-B4A4DECA3CC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
